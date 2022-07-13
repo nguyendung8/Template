@@ -215,6 +215,73 @@ padding: 40px;
     text-align: center;
 }
 #footer a{
-   
     color:#fff;
+}
+.modal{
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  background:rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content{
+  margin-top: 30px;
+  background-color:#fff;
+  width:800px;
+  min-height: 400px;
+  text-align: center;
+}
+.heading-content{
+  font-size:50px;
+  letter-spacing: 4px;
+  font-weight: 400;
+text-align: center;
+}
+.heading-p{
+  font-size:15px; 
+  line-height:2;
+  margin-top: 20px;
+  text-align: center;
+}
+.name{
+  width: 80%;
+  padding: 10px;
+  margin-top: 20px;
+}
+.modal-btn{
+margin-top: 40px;
+font-size:15px;
+margin-bottom: 30px;
+}
+.left-btn{
+  color: #fff;
+  background-color: #4CAF50;
+  padding:12px 16px;
+  width:40%;
+  border: none;
+}
+.right-btn{
+  color: #fff;
+  background-color: #f44336;
+  padding:12px 16px;
+  width:40%;
+  border:none;
+}
+.left-btn:hover{
+  cursor:pointer;
+background-color:#ccc;
+color:#000;
+}
+.right-btn:hover{
+cursor:pointer;
+background-color:#ccc;
+color:#000;
+}
+
+.remove{
+  display: none;
 }

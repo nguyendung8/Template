@@ -10,73 +10,110 @@
 </head>
 
 <html>
-    <div id="main">
-        <!-- Begin nav -->
-        <div id="header">
-            <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="#1">Jane & John</a></li>
-                <li><a href="#wedding">Wedding</a></li>
-                <li><a href="#2">RSVP</a></li>
-                
-            </ul>
-        </div>
-        <!-- End nav -->
+<div id="main">
+    <!-- Begin nav -->
+    <div id="header">
+        <ul id="nav">
+            <li><a href="">Home</a></li>
+            <li><a href="#1">Jane & John</a></li>
+            <li><a href="#wedding">Wedding</a></li>
+            <li><a href="#2">RSVP</a></li>
 
-        <!-- Begin slider -->
-        <div id="slider">
-            <div class="mid-slider">
-                <h1>Jane & John</h1>
-                <h2>Are getting married</h2>
-                <h3>17.07.2017</h3>
-            </div>
-        </div>
-        <!-- End slider -->
+        </ul>
+    </div>
+    <!-- End nav -->
 
-        <!-- Begin content -->
-        <div id="content">
-            <div id="1" class="content-1">
-                <h1> Jane & John</h1>
-                <img src="./images/wedding_couple2.jpg" >
-                <p>You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br> ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa<br> qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br> magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <!-- Begin slider -->
+    <div id="slider">
+        <div class="mid-slider">
+            <h1>Jane & John</h1>
+            <h2>Are getting married</h2>
+            <h3>17.07.2017</h3>
+        </div>
+    </div>
+    <!-- End slider -->
+
+    <!-- Begin content -->
+    <div id="content">
+        <div id="1" class="content-1">
+            <h1> Jane & John</h1>
+            <img src="./images/wedding_couple2.jpg">
+            <p>You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur
+                adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation<br> ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa<br> qui officia deserunt mollit anim id est laborum
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore<br> magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
             <button><a a href="#wedding">Wedding Details</a></button>
+        </div>
+        <div class="content-img">
+            <div class="center-content-img">
+                <h1>You Are Invited</h1>
+                <p>Of cousre</p>
             </div>
-            <div class="content-img">
-                <div class="center-content-img">
-                    <h1>You Are Invited</h1>
-                    <p>Of cousre</p>
+        </div>
+        <div id="wedding" class="content-3">
+            <h1 class="g"> THE WEDDING </h1>
+            <img src="./images/wedding_location.jpg">
+            <div class="content-3-desc">
+                <div class="left">
+                    <h2>When</h2>
+                    <p>Wedding Ceremony - 2:00pm</p>
+                    <p>Reception & Dinner - 5:00pm</p>
                 </div>
-            </div>
-            <div id="wedding" class="content-3">
-                <h1 class="g"> THE WEDDING </h1>
-                <img src="./images/wedding_location.jpg" >
-                <div class="content-3-desc">
-                    <div class="left"> 
-                         <h2>When</h2>
-                        <p>Wedding Ceremony - 2:00pm</p>
-                        <p>Reception & Dinner - 5:00pm</p></div>
-                  <div class="right">
+                <div class="right">
                     <h2>Where</h2>
                     <p>Some place, an address</p>
-                    <p>Some where, some address</p></div>
-                  </div>
-                </div>
-                <div id="2" class="content-4">
-                    <h1>HOPE   YOU   CAN   MAKE   IT !</h1>
-                    <h2>Kindly Respond By January, 2017</h2>
-                    <button class ="RSVP-btn">RSVP</button>
+                    <p>Some where, some address</p>
                 </div>
             </div>
-        <!-- End content-->
-
-        <!-- Begin footer -->
-        <div id="footer">
-            <p>Powered by <a href="https://www.w3schools.com/" target="_blank">w3.css</a></p>
         </div>
-        <!-- End footer -->
-
+        <div id="2" class="content-4">
+            <h1>HOPE YOU CAN MAKE IT !</h1>
+            <h2>Kindly Respond By January, 2017</h2>
+            <button class="RSVP-btn">RSVP</button>
+        </div>
     </div>
+    <!-- End content-->
 
+    <!-- Begin footer -->
+    <div id="footer">
+        <p>Powered by <a href="https://www.w3schools.com/" target="_blank">w3.css</a></p>
+    </div>
+    <!-- End footer -->
+</div>
+<div class="modal remove">
+    <div class="modal-content">
+        <h1 class ="heading-content">CAN YOU COME ?</h1>
+        <p class="heading-p">We really hope you can make it.</p>
+        <input class="name" type="text" placeholder="Name(s)">
+        <p class="heading-p">Sincerely, John & Jane</p>
+        <div class="modal-btn">
+            <button class="left-btn close-btn">Going</button>
+            <button class="right-btn close-btn">Can't come</button>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<script >
+    let closeBtn = document.querySelectorAll(".close-btn");
+    let modal = document.querySelector(".modal");
+    let rsVp = document.querySelectorAll(".RSVP-btn")
+
+   for(let i = 0; i < closeBtn.length; i++)
+   {
+    closeBtn[i].addEventListener("click", function(){
+            modal.classList.add("remove");
+    });
+   }
+for(let i = 0; i < rsVp.length; i++) {
+    rsVp[i].addEventListener("click", function(){
+        modal.classList.remove("remove");
+    });
+}
+</script>
 </body>
 
 </html>
