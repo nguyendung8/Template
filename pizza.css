@@ -87,6 +87,10 @@ h6 li a {
   border: none;
   font-family: "Amatic SC", sans-serif;
 }
+.t{
+    color:#fff;
+    text-decoration: none;
+}
 .text-content button:hover {
   background-color: #ccc;
   color: #000;
