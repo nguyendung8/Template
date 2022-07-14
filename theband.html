@@ -3,8 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Mạnh Dũng</title>
     <link rel="stylesheet" href="./theband.css">
+    <link rel="stylesheet" href="./reponsivetheband.css">
     <link rel="stylesheet" href="./themify-icons/themify-icons.css">
 </head>
 
@@ -32,6 +35,9 @@
             <!-- Begin search button -->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
+            </div>
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i  class="menu-icon ti-menu"></i>
             </div>
             <!-- End search button -->
         </div>
@@ -201,7 +207,21 @@
         </div>
     </div>
     <script src="./theband.js"></script>
+<script>
+    var header =document.getElementById('header');
+    var mobileMenu =document.getElementById('mobile-menu');
+    var headerHeight =header.clientHeight;
 
+    mobileMenu.onclick = function() {
+        var isClose = header.clientHeight === headerHeight;
+        if(isClose){
+            header.style.height = 'auto';
+        }
+        else{
+            header.style.height = null;
+        }
+    }
+</script>
 </body>
 
 </html>

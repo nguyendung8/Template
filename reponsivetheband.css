@@ -1,8 +1,27 @@
-
 /* Mobile */
 
 @media (max-width: 740px) {
-    #nav li{
-        display: block;
-    }
+  #nav li {
+    display: block;
+  }
+
+  #header .search-btn{
+    display: none;
+  }
+  .text-content{
+    display:none;
+  }
+
+.member-item{
+    margin-top:30px;
+    width:100%;
+   text-align: center;
+}
+.member-avt{
+    width:60%;
+}
+.place-item{
+    width:100%;
+    margin :20px 0;
+}
 }
