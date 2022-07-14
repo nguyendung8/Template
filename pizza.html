@@ -60,35 +60,35 @@
                             <span class="menu-right">$15.50
                             </span>
                         </h1>
-                        <p class="text-menu">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                        <p class="text-menu">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
                         <hr>
                         <h1>
                             <b>CHICKEN</b>
                             <span class="menu-right">$17.00
                             </span>
                         </h1>
-                        <p class="text-menu">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                        <p class="text-menu">Fresh tomatoes, mozzarella, chicken, onions</p>
                         <hr>
                         <h1>
                             <b>PINEAPPLE'O'CLOCK <b class="n">HOT! </b></b>
                             <span class="menu-right">$16.50
                             </span>
                         </h1>
-                        <p class="text-menu">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                        <p class="text-menu">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
                         <hr>
                         <h1>
                             <b>MEAT TOWN</b>
                             <span class="menu-right">$20.00
                             </span>
                         </h1>
-                        <p class="text-menu">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                        <p class="text-menu">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
                         <hr>
                         <h1>
                             <b>PARMA <b class="l">NEW</b></b>
                             <span class="menu-right">$21.50
                             </span>
                         </h1>
-                        <p class="text-menu">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                        <p class="text-menu">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
 
 
                     </div>
@@ -138,10 +138,34 @@
         <div id="footer">
             <p>Powered by <a class="text-white" href="https://www.w3schools.com/" target="_blank">w3.css</a></p>
         </div>
+        <!-- End footer -->
     </div>
-    <!-- End footer -->
+    <div class="modal remove">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h1>ORDER</h1>
+            </div>
+            <div class="modal-content">
+                <input type="text" placeholder="NAME" ><br>
+                <input type="text" placeholder="HOW MANY PEOPLE" ><br>
+                <input type="date" placeholder="16/11/2022 08:00 CH"><br>
+                <textarea placeholder="MESSAGE \ SPECIAL REQUIREMENTS"cols="20" rows=""></textarea>
+           <button class="send-btn">SEND MESSAGE</button>
+            </div>
+        </div>
+    </div>
+<script>
+    let closeBtn = document.querySelector(".send-btn");
+    let modal = document.querySelector(".modal");
+    let seNd = document.querySelector(".message-btn");
 
-    </div>
+    closeBtn.addEventListener("click", function(){
+        modal.classList.add("remove");
+    });
+    seNd.addEventListener("click", function(){
+        modal.classList.remove("remove");
+    });
+</script>
 </body>
 
 </html>

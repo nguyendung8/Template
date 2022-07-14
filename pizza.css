@@ -61,7 +61,7 @@ h6 li a {
 #slider {
   margin-top: 52px;
   padding-top: 50%;
-  background: url("./images/pizza.jpg") top center / cover no-repeat;
+  background: url("./images/pizza.jpg") top center / cover no-repeat ;
   position: relative;
 }
 .text-content span {
@@ -229,13 +229,14 @@ flex:1;
   text-align: center;
   min-height: 700px;
 }
-.contact-section button{
+.contact-section .message-btn{
     margin-top: 30px;
     padding: 20px 40px;
     font-family: "Amatic SC", sans-serif;
     font-size:30px;
     background-color:greenyellow;
     border:none;
+    border-radius: 10px;
 }
 .contact-section button:hover{
     background-color:#ccc;
@@ -256,4 +257,49 @@ flex:1;
 .fg{
    width:100%;
  text-align: center;
+}
+.modal{
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  background:rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.remove{
+  display: none;
+}
+.modal-container{
+  margin-top: 30px;
+  background-color:pink;
+  width:800px;
+  min-height: 400px;
+  text-align: center;
+}
+.modal-header{
+  font-size:30px;
+}
+.modal-content input , textarea{
+  width:80%;
+  padding:10px;
+  margin:10px;
+  font-family: "Amatic SC", sans-serif;
+  font-size:30px
+}
+.modal-content button{
+ border-radius: 10px  ;
+  width:80%;
+  padding:10px;
+  margin:10px;
+  font-family: "Amatic SC", sans-serif;
+  font-size:30px
+}
+.modal-content button:hover{
+  cursor: pointer;
+  background-color:red;
+  color:#000;
+  border:none;
 }
