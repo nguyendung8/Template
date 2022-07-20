@@ -1,25 +1,28 @@
-#include<bits/stdc++.h>
-#define ll long long
+#include<iostream>
+#include<algorithm>
 using namespace std;
+
+void nhapmang(int a[][10] ,int m, int n)
+{
+    for(int i=0;i<m;i++)
+       for(int j=0;j<n;j++)
+   {
+       cin >> a[i][j];
+   }
+}
 int main()
 {
-    int n;
-    cin >> n;
-    int chan[n] , le[n];
-    int c= 0 , l =0;
-    for(int i= 0;i<n ;i++)
-    {
-        int x;
-        cin >> x;
-        if(x %2 ==0)
-        chan[c++] =x;
-        else le[l++] =x;
-    }
-    sort(chan , chan+c);
-    sort(le ,le+l);
-    for(int i =0 ;i<c;i++)
-    cout << chan[i] << " ";
-    for(int i=0 ;i <l;i++)
-    cout << le[i] << " ";
+    int i,j,n,m,a[10][10]; // n hang  , m cot
+     cin >> n >> m;
+     nhapmang(a, n ,m);
+   sort(a,a+n,a+m);
+	for(int i=0 ;i<n ;i++)
+	{
+		for(int j=0;j<m;j++)
+		{
+			cout << a[i][j] << " ";
+		}
+		cout << endl;
+	}
     return 0;
 }
