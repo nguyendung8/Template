@@ -1,0 +1,51 @@
+/* Tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .footer p {
+    font-size: 17px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 739px) {
+  .nav-sidebar-img {
+    display: none;
+  }
+  .nav-sidebar-item i {
+    display: none;
+  }
+  #nav {
+    height: 40px;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .nav-sidebar-item {
+    padding: 14px;
+    width: 25%;
+  }
+  #content {
+    margin-left: 0;
+  }
+  .content-price {
+    flex-direction: column;
+  }
+  .content-price-list {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .content-section-title {
+    padding-top: 0;
+  }
+  .content-photo-lists {
+    flex-direction: column;
+    align-items:center;
+  }
+  .contact-section-list-item {
+    font-size: 20px;
+}
+.footer p{
+    font-size: 13px;
+}
+}
