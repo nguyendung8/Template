@@ -22,7 +22,9 @@ background-color:#fff;
     cursor: pointer;
     justify-content:space-around;
 }
-.navbar-logo{
+.link-nav{
+    text-decoration: none;
+    color:#000;
 }
 .active{
     color:orange;

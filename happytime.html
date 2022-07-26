@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HAPPY TIME</title>
     <link rel="stylesheet" href="./happytime.css">
+    <link rel="stylesheet" href="./reponsivehappytime.css">
     <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,16 +15,23 @@
     <!-- Header -->
     <div id="header">
     <div class="navbar">
+        <div class="top">
         <a href="" class="navbar-logo">
+            
             <img src="./images/happytime-fulltext.png" alt="" class="navbar-logo-img">
         </a>
-        <ul class="navbar-lists">
-            <li class="navbar-list-item active">Trang chủ</li>
-            <li class="navbar-list-item">Tính năng</li>
-            <li class="navbar-list-item">Báo giá</li>
-            <li class="navbar-list-item">Blog</li>
-            <li class="navbar-list-item">Người dùng</li>
-            <li class="navbar-list-item">
+       <button type="button" class="nav-btn">
+         <i id="bar" class="fa-solid fa-bars unicon"></i>
+        </button>
+    </div>
+        <ul  class="navbar-lists remove">
+           <a href=""class="link-nav"> <li class="navbar-list-item active">Trang chủ</li></a>
+           <a href=""class="link-nav"> <li class="navbar-list-item">Tính năng</li></a>
+           <a href=""class="link-nav"> <li class="navbar-list-item">Báo giá</li></a>
+           <a href=""class="link-nav"> <li class="navbar-list-item">Blog</li></a>
+           <a href=""class="link-nav"> <li class="navbar-list-item">Người dùng</li></a>
+           <a href=""class="link-nav"> <li class="navbar-list-item"></li> </a>
+           <li>
                 <a href="" class="navbar-list-item-link1">Đăng nhập</a>
             </li>
             <li class="navbar-list-item">
@@ -99,7 +107,7 @@
             </div>
         </div>
         <div class="content-section5">
-            <div class="container">
+            <div id="d" class="container">
                 <div class="content-section5-left">
                     <img src="./images/image5.png" alt="" class="content-section5-left-img">
                 </div>
@@ -175,12 +183,12 @@
                 </div>
             </div>
             <div class="link">
-                <a href="" class="content-section5-right-btn ">TRẢI NGHIỆM MIỄN PHÍ NGAY</a>       
+                <a href="" class="content-section5-right-btn df">TRẢI NGHIỆM MIỄN PHÍ NGAY</a>       
             </div>
         </div>
         <div class="content-section7">
             <h2 class="e">Vì sao nên sử dụng Happy Time</h2>
-            <div class="container">
+            <div id="d" class="container">
             <div class="content-section7-left">
                 <img src="./images/image1.png" alt="" class="content-section7-left-img">
             </div>
@@ -262,7 +270,29 @@
         </h5>
     </div>
     </div>
+<script>
+    let heaDer =document.querySelector('#header');
+    let modal = document.querySelector('.navbar-lists');
+    let iCon=document.querySelector('.nav-btn');
+    if(heaDer.clientWidth > 1039)
+    {
+        iCon.style.display="none";
+    }
+    else{
+        iCon.style.display="block";
+    }
 
+    iCon.addEventListener('click', function(){
+        if(document.querySelector('.remove'))
+        {
+            modal.classList.remove('remove');
+        }
+        else{
+            modal.classList.add('remove');
+        }
+    });
+  
+</script>
 
 </body>
 </html>
