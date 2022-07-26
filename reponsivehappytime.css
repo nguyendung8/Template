@@ -168,6 +168,7 @@ padding: 0 31px;
         position:relative;
         left:28%;
     }
+    
     .content-section3{
         padding: 0 0;
     }
@@ -180,7 +181,9 @@ padding: 0 31px;
     .row-1-text{
         font-size: 16px;
     }
-    
+    .container-content1-item{
+        text-align: center;
+    }
     .content-section4{
         padding-top: 0;
     }
