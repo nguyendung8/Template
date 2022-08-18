@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href="http://fonts.cdnfonts.com/css/verdana" rel="stylesheet">
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="./register.css">
+     <link rel="stylesheet" href="./reponsiveregister.css">
+    <title>Register</title>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="heading">
+            <button class="btn-heading"> 
+                <i class="fa-solid fa-left-long"></i>
+                Quay lại
+            </button>
+            <h2 class="heading-text">
+                Đăng ký
+            </h2>
+        </div>
+        <div class="content">
+            <form action="" class="register" onSubmit="">
+                <div class="list-item">
+                <div class="input-item">
+                    <i class="fa-solid fa-user content-icon"></i>
+                    <input class="input name k" type="text" placeholder="Họ và tên*" >
+              
+                </div>
+                <span class="message4 error"></span>
+                
+                <div class="input-item">
+                    <i class="fa-solid fa-phone content-icon"></i>
+                    <input class="input phone-number k" type="text" placeholder="Số điện thoại*">
+                </div>
+                <span class="message2 error"></span>
+
+                <div class="input-item">
+                    <i class="fa-solid fa-envelope  content-icon"></i>
+                    <input class="input email k" type="email" placeholder="Email*">
+                </div>
+                <span class="message4 error"></span>
+              
+                <div class="input-item">
+                    <i class="fa-solid fa-lock  content-icon"></i>
+                    
+                    <input id="password" class="input k" type="password" placeholder="Mật khẩu*" >
+                </div>
+                <span class="message error"></span>
+                <div class="input-item">
+                    <i class="fa-solid fa-lock  content-icon"></i>
+                    <input  class="input re-password k" type="password" placeholder="Nhập lại mật khẩu*" >
+                </div>
+                <span class="message1 error"></span>
+                <div class="input-item">
+                    <i class="fa-solid fa-building  content-icon"></i>
+                    <input class="input" type="text" placeholder="Công ty">
+                </div>
+                
+                <div class="input-item-footer">
+                  <select class="item-select">
+                    <option>Tỉnh / Thành phố</option>
+                    <option>Hà Nội</option>
+                    <option>Nghệ An</option>
+                    <option>Hà Tĩnh</option>
+                  </select>
+                  <select class="item-select">
+                    <option>Quận/huyện</option>
+                    <option>Hoàng Mai</option>
+                    <option>Hưng Nguyên</option>
+                    <option>Cẩm Xuyên</option>
+                  </select>
+                </div>
+                <button class="btn-submit" type="submit">Đăng ký</button>
+                <div class="item-end">
+                    Bạn đã có tài khoản? <a class="login-now" href="">Đăng nhập ngay</a>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p class="text-footer">
+            ©2022 SHiring. Một sản phẩm của Công ty CP TopCV Việt Nam
+        </p>
+    </div>
+    <script src="./register.js"></script>
+</body>
+</html>
+
